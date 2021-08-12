@@ -7,20 +7,20 @@
 
 # C) Quais foram os números pares.
 
-par = 0
-pares = []
+
 tuplex = (int(input('Digite um Valor: ')),
 int(input('Digite um valor: ')),
 int(input('Digite um valor: ')),
 int(input('Digite um valor: ')))
-for c in tuplex:
-    if tuplex[c] % 2 == 0:
-        par += 1
-        pares.append(tuplex)
 
+if 3 in tuplex:
+    print(f'O primeiro valor 3 apareceu na posição {tuplex.index(3)}')
+else:
+    print('Não contém nenhum número 3 nesta tupla')
+for n in tuplex:
+    if n % 2 == 0:
+        print(n, end=' ')
 
 print(f'''
 O valor 9 apareceu {tuplex.count(9)} vezes na tupla.
-O primeiro valor 3 apareceu na posição {tuplex.index(3)}
-A quantidade de números pares é de {par} e eles são os números {pares}
 ''')
