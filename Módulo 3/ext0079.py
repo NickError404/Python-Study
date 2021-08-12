@@ -9,10 +9,10 @@ lista = ('Lapís', 2.99,
 'Taxa_Selic', 5.77,
 'Kent Cigar', 12.99)
 
-print('{:=^40}'.format('Lista de Compras'))
+print('{:=^45}'.format('Lista de Compras'))
 for pos in range(0, len(lista)):
     if pos % 2 == 0:
-        print(f'{lista[pos]:.<30}', end='')
+        print(f'{lista[pos]:.<35}', end='')
     else:
         print(f'R${lista[pos]:.>3.2f}')
-print('-' * 40)
+print('-' * 45)
