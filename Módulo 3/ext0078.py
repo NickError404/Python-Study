@@ -17,6 +17,7 @@ if 3 in tuplex:
     print(f'O primeiro valor 3 apareceu na posição {tuplex.index(3)}')
 else:
     print('Não contém nenhum número 3 nesta tupla')
+#o N passa pelo valor de cala item da tuplex verificando se existe um número par e depois printa
 for n in tuplex:
     if n % 2 == 0:
         print(n, end=' ')

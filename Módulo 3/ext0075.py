@@ -14,4 +14,3 @@ por_extenso = ('Zero', 'Um', 'Dois', 'Três', 'Quatro',
 'Dezeseis', 'Dezessete', 'Dezoito',
 'Dezenove', 'Vinte')
 print(f'{por_extenso[select]}')
-    
