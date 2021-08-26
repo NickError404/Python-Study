@@ -10,13 +10,14 @@ while conti == True:
     nota1 = (float(input('Digite sua nota: ')))
     nota2 = (float(input('Digite sua nota: ')))
     alunos_notas.append([[nota1], [nota2], [((nota1+nota2)/2)]])
+    print(alunos_notas)
     ask = str(input('Continue? Y/N: '))
     if ask in 'Yy':
         conti = True
     elif ask in 'Nn':
         conti = False
 for c, i in enumerate(alunos_notas[0]):
-    print(f'Aluno: {alunos_notas[0][c]}\nMédia: {alunos_notas[3][c]}')
+    print(f'Aluno: {alunos_notas[0][c]}\nMédia: {alunos_notas[1][c]}')
 while conti == False:
     pos = ' '
     while pos not in alunos_notas[0]:
@@ -26,7 +27,7 @@ while conti == False:
         else:
             print('\033[31mAluno não encontrado: tente novamente!\033[33m')
     print('='*35)
-    print(f'Aluno: {alunos_notas[0][index]}\nNota_1: {alunos_notas[1][index]}\nNota_2 {alunos_notas[2][index]}')
+    print(f'Aluno: {alunos_notas[0][index]}\nNota_1: {alunos_notas[1][index]}\nNota_2 {alunos_notas[1][index]}')
     print('='*35)
     ask = str(input('Deseja ver a nota de mais a algum aluno? Y/N '))
     if ask in 'Yy':
