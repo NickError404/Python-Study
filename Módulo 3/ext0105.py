@@ -2,9 +2,6 @@
 # parâmetros: o primeiro que indique o número a calcular e outro chamado show, que será um valor
 # lógico (opcional) indicando se será mostrado ou não na tela o processo de cálculo do fatorial.
 
-
-
-
 def factorial(num, show=False):
     from math import factorial
     if show == True:
