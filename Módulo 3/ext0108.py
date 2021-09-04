@@ -7,19 +7,7 @@
 # – A média da turma
 # – A situação (opcional)
 
-result = dict()
-def nota():
-    notas = list()
-    conti = False
-    while conti == False:
-        notas.append(float(input('Coloque uma nota: ')))
-        ask = ' '
-        while ask not in 'YyNn':
-            ask = str(input('Deseja continuar: [Y/N] '))
-        if ask in 'Yy':
-            conti = False
-        else:
-            conti = True
+def nota(notas):
     s = sum(notas)
     q = len(notas)
     ma = max(notas)
@@ -40,7 +28,20 @@ def nota():
             result['Situação'] = 'Recuperação'
         elif me >= 7.5:
             result['Situação'] = 'Aprovado'
+    for k, v in result.items():
+        print(f'O valor de {k} é {v}')
     return result
-nota()
-for k, v in result.items():
-    print(f'O valor de {k} é {v}')
+
+result = dict()
+notas = list()
+conti = False
+while conti == False:
+    notas.append(float(input('Coloque uma nota: ')))
+    ask = ' '
+    while ask not in 'YyNn':
+        ask = str(input('Deseja continuar: [Y/N] '))
+    if ask in 'Yy':
+        conti = False
+    else:
+        conti = True
+nota(notas)
